@@ -45,7 +45,7 @@
   position: $pos;
 }
 
-// Clip path mixin with fallback
+// Clip path mixin
 @mixin clip-path($clip) {
   clip-path: $clip;
   -webkit-clip-path: $clip;
