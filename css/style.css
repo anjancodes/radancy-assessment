@@ -457,11 +457,7 @@ footer .footer-below a {
     color: #00945f;
   }
   a {
-    text-decoration: none;
     color: #000;
-  }
-  a::after {
-    content: " (" attr(href) ")";
-    font-size: 10pt;
+    text-decoration: none;
   }
 }/*# sourceMappingURL=style.css.map */
