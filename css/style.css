@@ -169,6 +169,7 @@ footer .footer-detail {
 }
 footer .footer-detail a, footer .footer-detail p {
   color: #888888;
+  font-weight: bold;
 }
 footer .footer-below {
   display: flex;
