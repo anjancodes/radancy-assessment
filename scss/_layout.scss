@@ -1,0 +1,172 @@
+// Header
+header {
+  .logo {
+    padding: 35px 0;
+    text-align: center;
+    
+    img {
+      max-width: 200px;
+    }
+  }
+}
+
+// Hero Section
+.hero {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: $spacing-xl;
+  
+  &-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/banner-hero.webp") no-repeat 10% center;
+    background-size: cover;
+  }
+  
+  &-overlay {
+    display: none;
+  }
+}
+
+// Tagline Section
+.tagline {
+  text-align: center;
+  margin: 40px 0;
+  
+  h2 {
+    color: $primary-color;
+    font-size: $font-size-xxxl;
+    margin-bottom: $spacing-md;
+    font-weight: 500;
+  }
+}
+
+// Advantage Section
+.advantage {
+  text-align: center;
+  margin: $spacing-xxl 0;
+  
+  h2 {
+    color: $primary-color;
+    font-size: $font-size-xxxl;
+    margin-bottom: $spacing-md;
+    font-weight: 500;
+  }
+}
+
+// Features
+.features {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature {
+  width: 100%;
+  padding: 0 $spacing-sm;
+  
+  h3 {
+    color: $primary-color;
+    font-size: $font-size-xl;
+    margin-bottom: 12px;
+    text-align: left;
+    font-weight: 500;
+  }
+  
+  a {
+    color: $accent-color;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    
+    &::after {
+      content: ">";
+      margin-left: $spacing-xs;
+    }
+  }
+}
+
+.feature-divider {
+  width: 90%;
+  height: 1px;
+  background-color: $divider-color;
+  margin: $spacing-lg auto;
+}
+
+// Bank Info Section
+.bank-info {
+  background-color: $light-bg;
+  margin: $spacing-xl 0;
+  
+  h3 {
+    background-color: $primary-color;
+    color: $white;
+    text-align: center;
+    padding: $spacing-md;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: $line-height-lg;
+  }
+  
+  p {
+    padding: $spacing-md $spacing-sm;
+  }
+}
+
+// Footer
+footer {
+  padding: 37px 0;
+  font-size: $font-size-sm;
+  color: $dark-text;
+  border-top: 2px solid $primary-color;
+  
+  .footer-above {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $spacing-lg;
+  }
+  
+  .social-links {
+    padding: 0px 0 27px 0;
+    display: flex;
+    gap: $spacing-xs;
+    justify-content: flex-start;
+    
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 35px;
+      height: 35px;
+      
+      img {
+        width: 100%;
+      }
+    }
+  }
+  
+  .footer-detail {
+    font-size: $font-size-xs;
+    line-height: $line-height-base;
+    text-align: left;
+    
+    a, p {
+      color: $text-color;
+    }
+  }
+  
+  .footer-below {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: $spacing-sm;
+    font-size: $font-size-xs;
+    
+    a {
+      color: $black;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,277 @@
+// Small tablets (portrait)
+@include respond-to(sm) {
+  .container {
+    max-width: $container-sm;
+  }
+
+  .hero {
+    height: 350px;
+  }
+
+  .para {
+    font-size: 15px;
+  }
+
+  .bank-info p {
+    padding: 25px 30px;
+  }
+
+  .testimonial {
+    &-info,
+    &-info1 {
+      padding: 0 40px;
+    }
+
+    &-image {
+      width: 140px;
+      height: 140px;
+    }
+  }
+}
+
+// Medium tablets and small laptops
+@include respond-to(md) {
+  .container {
+    max-width: $container-md;
+  }
+
+  header .logo {
+    text-align: left;
+
+    img {
+      width: auto;
+      max-width: 280px;
+    }
+  }
+
+  .hero {
+    height: 400px;
+  }
+
+  .tagline h2,
+  .advantage h2 {
+    font-size: $font-size-xxl;
+  }
+
+  .features {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px -15px;
+  }
+
+  .feature {
+    flex: 1;
+    min-width: 300px;
+    padding: 0 $spacing-md;
+  }
+
+  .feature-divider {
+    width: 1px;
+    height: 110px;
+    margin: 0 $spacing-lg;
+    align-self: center;
+  }
+
+  .d-none {
+    display: none;
+  }
+
+  .testimonial {
+    flex: 1;
+    min-width: 300px;
+    padding: $spacing-md;
+  }
+
+  .footer-above {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .social-links {
+    justify-content: flex-start;
+  }
+
+  .footer-detail {
+    text-align: left;
+  }
+
+  .footer-below {
+    justify-content: flex-start;
+  }
+}
+
+// Large devices (desktops)
+@include respond-to(lg) {
+  .container {
+    max-width: $container-lg;
+  }
+
+  .tagline {
+    margin: 70px 0;
+  }
+
+  .hero {
+    height: 450px;
+
+    &-image {
+      width: 60%;
+      @include clip-path(polygon(0 0, 100% 0, 85% 100%, 0 100%));
+      background-position: center left;
+    }
+
+    &-overlay {
+      display: flex;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 54%;
+      height: 100%;
+      background-color: $primary-color;
+      @include clip-path(polygon(15% 0%, 100% 0, 100% 100%, 0 100%));
+      align-items: center;
+      justify-content: center;
+
+      h1 {
+        color: $white;
+        font-size: 28px;
+        text-align: center;
+        padding: 0 30px;
+        line-height: 1.3;
+      }
+    }
+  }
+
+  header .logo {
+    padding: 54px 0 42px 0;
+  }
+
+  .advantage {
+    margin: -25px 0 50px 0;
+  }
+
+  .tagline h2,
+  .advantage h2 {
+    font-size: 26px;
+  }
+
+  .features {
+    &-second {
+      margin: 100px 0 60px 0;
+    }
+  }
+
+  .feature h3 {
+    font-size: $font-size-xl;
+  }
+
+  .para {
+    font-size: $font-size-base;
+  }
+
+  .bank-info p {
+    padding: 30px 50px;
+  }
+
+  .testimonials {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px -15px;
+  }
+
+  .testimonial {
+    &-content {
+      margin: 0;
+    }
+
+    &-info {
+      padding: 0 80px;
+    }
+
+    &-info1 {
+      padding: 0 30px;
+    }
+
+    &-image {
+      width: 140px;
+      height: 140px;
+    }
+
+    blockquote {
+      font-size: $font-size-md;
+    }
+  }
+
+  footer {
+    margin-top: 100px;
+}
+  
+}
+
+// Extra large devices
+@include respond-to(xl) {
+  .container {
+    max-width: $container-xl;
+  }
+
+  .hero {
+    height: 500px;
+
+    &-overlay h1 {
+      font-size: 36px;
+    }
+  }
+
+  .testimonial-detail {
+    padding: 0 120px;
+  }
+
+  .bank-info p {
+    padding: 30px 60px;
+  }
+}
+
+// Print styles
+@media print {
+  .button,
+  .social-links {
+    display: none;
+  }
+
+  body {
+    font-size: 12pt;
+    color: $black;
+  }
+
+  .hero {
+    height: auto;
+    margin-bottom: 1cm;
+
+    &-image,
+    &-overlay {
+      position: static;
+      clip-path: none;
+      -webkit-clip-path: none;
+    }
+
+    &-overlay {
+      background-color: transparent;
+
+      h1 {
+        color: $primary-color;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $black;
+
+    &::after {
+      content: " (" attr(href) ")";
+      font-size: 10pt;
+    }
+  }
+}

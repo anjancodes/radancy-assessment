@@ -1,0 +1,39 @@
+// Base styles and reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+}
+
+// Typography
+.para {
+  color: $text-color;
+  line-height: $line-height-lg;
+  margin: 0 auto;
+  text-align: left;
+  font-weight: 400;
+  font-size: $font-size-base;
+}
+
+hr {
+  width: 80px;
+  margin: $spacing-md auto $spacing-xl auto;
+  border: 1.5px solid $primary-color;
+}
+
+// Utility Classes
+.green-text {
+  color: $primary-color;
+}
+
+.d-none {
+  display: block;
+}
