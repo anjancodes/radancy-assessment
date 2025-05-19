@@ -58,7 +58,7 @@ header .logo img {
   background: url("../images/banner-hero.webp") no-repeat 10% center;
   background-size: cover;
 }
-.hero-overlay {
+.hero-layer {
   display: none;
 }
 
@@ -118,11 +118,11 @@ header .logo img {
   margin: 20px auto;
 }
 
-.bank-info {
+.bank-locations {
   background-color: #ebf7f5;
   margin: 30px 0;
 }
-.bank-info h3 {
+.bank-locations h3 {
   background-color: #00945f;
   color: #fff;
   text-align: center;
@@ -131,7 +131,7 @@ header .logo img {
   font-size: 20px;
   line-height: 28px;
 }
-.bank-info p {
+.bank-locations p {
   padding: 15px 10px;
 }
 
@@ -263,7 +263,7 @@ footer .footer-below a {
   .para {
     font-size: 15px;
   }
-  .bank-info p {
+  .bank-locations p {
     padding: 25px 30px;
   }
   .testimonial-info, .testimonial-info1 {
@@ -348,7 +348,7 @@ footer .footer-below a {
     -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
     background-position: center left;
   }
-  .hero-overlay {
+  .hero-layer {
     display: flex;
     position: absolute;
     top: 0;
@@ -361,7 +361,7 @@ footer .footer-below a {
     align-items: center;
     justify-content: center;
   }
-  .hero-overlay h1 {
+  .hero-layer h1 {
     color: #fff;
     font-size: 28px;
     text-align: center;
@@ -387,7 +387,7 @@ footer .footer-below a {
   .para {
     font-size: 16px;
   }
-  .bank-info p {
+  .bank-locations p {
     padding: 30px 50px;
   }
   .testimonials {
@@ -423,13 +423,13 @@ footer .footer-below a {
   .hero {
     height: 500px;
   }
-  .hero-overlay h1 {
+  .hero-layer h1 {
     font-size: 36px;
   }
   .testimonial-detail {
     padding: 0 120px;
   }
-  .bank-info p {
+  .bank-locations p {
     padding: 30px 60px;
   }
 }
@@ -446,15 +446,15 @@ footer .footer-below a {
     height: auto;
     margin-bottom: 1cm;
   }
-  .hero-image, .hero-overlay {
+  .hero-image, .hero-layer {
     position: static;
     clip-path: none;
     -webkit-clip-path: none;
   }
-  .hero-overlay {
+  .hero-layer {
     background-color: transparent;
   }
-  .hero-overlay h1 {
+  .hero-layer h1 {
     color: #00945f;
   }
   a {

@@ -27,7 +27,7 @@ header {
     background-size: cover;
   }
   
-  &-overlay {
+  &-layer {
     display: none;
   }
 }
@@ -97,7 +97,7 @@ header {
 }
 
 // Bank Info Section
-.bank-info {
+.bank-locations {
   background-color: $light-bg;
   margin: $spacing-xl 0;
   
